@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAVEN MIND | Cafe & Library</title>
+      <link rel="stylesheet" href="css/cafe.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><span>☕</span> HEAVEN MIND</div>
+            <ul class="nav-links">
+                <li><a onclick="showPage('home')" class="nav-item active" data-en="Home" data-jp="ホーム">Home</a></li>
+                <li><a onclick="showPage('menu')" class="nav-item" data-en="Menu" data-jp="メニュー">Menu</a></li>
+                <li><a onclick="showPage('service')" class="nav-item" data-en="Services" data-jp="サービス">Services</a></li>
+                <li><a onclick="showPage('support')" class="nav-item" data-en="App & Support" data-jp="アプリ・サポート">Support</a></li>
+            </ul>
+            <div class="lang-switch">
+                <div class="lang-opt active" onclick="setLang('en')">EN</div>
+                <div class="lang-opt" onclick="setLang('jp')">JP</div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="active">
+        <h1 data-en="Welcome to HEAVEN MIND" data-jp="HEAVEN MINDへようこそ">Welcome to HEAVEN MIND</h1>
+        <p data-en="Books, Coffee, and Peace of Mind." data-jp="本とコーヒー、そして心の安らぎを。">Books, Coffee, and Peace of Mind.</p>
+        <button class="hero-btn" onclick="showPage('menu')" data-en="View Menu" data-jp="メニューを見る">View Menu</button>
+    </section>
+
+    <section id="menu">
+        <h2 data-en="Our Menu" data-jp="メニュー">Our Menu</h2>
+        
+        <div class="menu-section">
+            <h2 class="sub-title" data-en="Coffee Classics" data-jp="コーヒー・クラシック">Coffee Classics</h2>
+            <div class="List">
+                <div class="menu-item">
+                    <img src="images/espresso.jpg" alt="Espresso" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="1. Espresso" data-jp="1. エスプレッソ">1. Espresso</span></h3>
+                        <p>
+                            <span data-en="A concentrated, intense shot of coffee." data-jp="濃厚で味わい深いコーヒーのショット。">A concentrated, intense shot of coffee.</span>
+                            <span class="font-semibold">350円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/doppio.png" alt="Doppio" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="2. Doppio" data-jp="2. ドッピオ">2. Doppio</span></h3>
+                        <p>
+                            <span data-en="A double shot of espresso for extra kick." data-jp="エスプレッソのダブルショット。">A double shot of espresso for extra kick.</span>
+                            <span class="font-semibold">450円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Americano.jpg" alt="Americano" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="3. Americano" data-jp="3. アメリカーノ">3. Americano</span></h3>
+                        <p>
+                            <span data-en="Espresso diluted with hot water." data-jp="エスプレッソのお湯割り。すっきりとした味わい。">Espresso diluted with hot water.</span>
+                            <span class="font-semibold">400円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/latte.webp" alt="Latte" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="4. Latte" data-jp="4. ラテ">4. Latte</span></h3>
+                        <p>
+                            <span data-en="Espresso with steamed milk and a thin layer of foam." data-jp="エスプレッソにたっぷりのスチームミルク。">Espresso with steamed milk and a thin layer of foam.</span>
+                            <span class="font-semibold">550円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cappuccino-005.jpg" alt="Cappuccino" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="5. Cappuccino" data-jp="5. カプチーノ">5. Cappuccino</span></h3>
+                        <p>
+                            <span data-en="Equal parts espresso, steamed milk, and milk foam." data-jp="エスプレッソとふわふわのフォームミルク。">Equal parts espresso, steamed milk, and milk foam.</span>
+                            <span class="font-semibold">550円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/flatwhite.webp" alt="Flat White" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="6. Flat White" data-jp="6. フラットホワイト">6. Flat White</span></h3>
+                        <p>
+                            <span data-en="Espresso with microfoam, velvety texture." data-jp="きめ細かなミルクフォームの滑らかな口当たり。">Espresso with microfoam, velvety texture.</span>
+                            <span class="font-semibold">580円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/macchiato.jpg" alt="Macchiato" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="7. Macchiato" data-jp="7. マキアート">7. Macchiato</span></h3>
+                        <p>
+                            <span data-en="Espresso stained with a dollop of milk foam." data-jp="エスプレッソに少量のフォームミルクをトッピング。">Espresso stained with a dollop of milk foam.</span>
+                            <span class="font-semibold">420円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/mocha.webp" alt="Mocha" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="8. Mocha" data-jp="8. モカ">8. Mocha</span></h3>
+                        <p>
+                            <span data-en="Latte with chocolate syrup and whipped cream." data-jp="チョコシロップとホイップクリーム入りのラテ。">Latte with chocolate syrup and whipped cream.</span>
+                            <span class="font-semibold">600円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Turkish.jpg" alt="Turkish Coffee" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="9. Turkish Coffee" data-jp="9. トルココーヒー">9. Turkish Coffee</span></h3>
+                        <p>
+                            <span data-en="Finely ground coffee boiled in a pot." data-jp="極細挽きの豆を煮出した伝統的なコーヒー。">Finely ground coffee boiled in a pot.</span>
+                            <span class="font-semibold">450円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/iced-coffee.webp" alt="Iced Coffee" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="10. Iced Coffee" data-jp="10. アイスコーヒー">10. Iced Coffee</span></h3>
+                        <p>
+                            <span data-en="Brewed coffee served over ice." data-jp="氷で冷やしたドリップコーヒー。">Brewed coffee served over ice.</span>
+                            <span class="font-semibold">400円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/coldbrew.jpg" alt="Cold Brew" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="11. Cold Brew" data-jp="11. コールドブリュー">11. Cold Brew</span></h3>
+                        <p>
+                            <span data-en="Coffee steeped in cold water for 12+ hours." data-jp="12時間以上かけて水出ししたまろやかな味。">Coffee steeped in cold water for 12+ hours.</span>
+                            <span class="font-semibold">550円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/affogato.jpg" alt="Affogato" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="12. Affogato" data-jp="12. アフォガート">12. Affogato</span></h3>
+                        <p>
+                            <span data-en="Espresso poured over a scoop of vanilla ice cream." data-jp="バニラアイスに熱いエスプレッソをかけて。">Espresso poured over a scoop of vanilla ice cream.</span>
+                            <span class="font-semibold">650円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/vienna.jpg" alt="Vienna Coffee" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="13. Vienna Coffee" data-jp="13. ウィンナーコーヒー">13. Vienna Coffee</span></h3>
+                        <p>
+                            <span data-en="Espresso topped with whipped cream." data-jp="エスプレッソにたっぷりのホイップクリーム。">Espresso topped with whipped cream.</span>
+                            <span class="font-semibold">520円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/redeye.jpg" alt="Red Eye" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="14. Red Eye" data-jp="14. レッドアイ">14. Red Eye</span></h3>
+                        <p>
+                            <span data-en="Drip coffee with a shot of espresso." data-jp="ドリップコーヒーにエスプレッソを追加。">Drip coffee with a shot of espresso.</span>
+                            <span class="font-semibold">500円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/irish.jpg" alt="Irish Coffee" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="15. Irish Coffee" data-jp="15. アイリッシュコーヒー">15. Irish Coffee</span></h3>
+                        <p>
+                            <span data-en="Coffee, Irish whiskey, and sugar, topped with cream." data-jp="ウイスキー入りコーヒーにクリームをフロート。">Coffee, Irish whiskey, and sugar, topped with cream.</span>
+                            <span class="font-semibold">800円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pourover.webp" alt="Pour Over (Chemex)" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="16. Pour Over (Chemex)" data-jp="16. ハンドドリップ">16. Pour Over (Chemex)</span></h3>
+                        <p>
+                            <span data-en="Manually brewed coffee highlighting nuanced flavors." data-jp="豆の個性を引き出す丁寧なハンドドリップ。">Manually brewed coffee highlighting nuanced flavors.</span>
+                            <span class="font-semibold">600円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/breve.jpg" alt="Breve" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="17. Breve" data-jp="17. ブレーベ">17. Breve</span></h3>
+                        <p>
+                            <span data-en="Latte made with half-and-half instead of milk." data-jp="ミルクの代わりにクリームを使った濃厚なラテ。">Latte made with half-and-half instead of milk.</span>
+                            <span class="font-semibold">620円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/ristretto.webp" alt="Ristretto" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="18. Ristretto" data-jp="18. リストレット">18. Ristretto</span></h3>
+                        <p>
+                            <span data-en="A short shot of espresso, sweeter and less bitter." data-jp="抽出時間を短くした、濃厚で甘みのあるエスプレッソ。">A short shot of espresso, sweeter and less bitter.</span>
+                            <span class="font-semibold">380円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/mazagran.jpg" alt="Mazagran" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="19. Mazagran" data-jp="19. マザグラン">19. Mazagran</span></h3>
+                        <p>
+                            <span data-en="Cold coffee with lemon or rum." data-jp="レモンやラムを加えた冷たいコーヒー。">Cold coffee with lemon or rum.</span>
+                            <span class="font-semibold">550円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cafeaulait.jpg" alt="Café au Lait" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="20. Café au Lait" data-jp="20. カフェオレ">20. Café au Lait</span></h3>
+                        <p>
+                            <span data-en="Strong brewed coffee mixed with hot milk." data-jp="ドリップコーヒーと温かいミルクを半分ずつ。">Strong brewed coffee mixed with hot milk.</span>
+                            <span class="font-semibold">480円</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="sub-title" data-en="Decadent Cakes" data-jp="特製ケーキ">Decadent Cakes</h2>
+            <div class="List">
+                <div class="menu-item">
+                    <img src="images/cheesecake.jpg" alt="Classic Cheesecake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="1. Classic Cheesecake" data-jp="1. クラシックチーズケーキ">1. Classic Cheesecake</span></h3>
+                        <p>
+                            <span data-en="Creamy New York style, graham cracker crust." data-jp="濃厚なNYスタイル。グラハムクラッカーの生地。">Creamy New York style, graham cracker crust.</span>
+                            <span class="font-semibold">700円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/redvelvet.jpeg" alt="Red Velvet Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="2. Red Velvet Cake" data-jp="2. レッドベルベットケーキ">2. Red Velvet Cake</span></h3>
+                        <p>
+                            <span data-en="Moist cocoa cake with tangy cream cheese frosting." data-jp="ココア風味の生地にクリームチーズフロスティング。">Moist cocoa cake with tangy cream cheese frosting.</span>
+                            <span class="font-semibold">750円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/lava.jpg" alt="Chocolate Lava Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="3. Chocolate Lava Cake" data-jp="3. フォンダンショコラ">3. Chocolate Lava Cake</span></h3>
+                        <p>
+                            <span data-en="Warm cake with a molten dark chocolate center." data-jp="中から温かいチョコがとろけ出すケーキ。">Warm cake with a molten dark chocolate center.</span>
+                            <span class="font-semibold">800円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/carrot.jpg" alt="Carrot Walnut Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="4. Carrot Walnut Cake" data-jp="4. キャロットウォルナットケーキ">4. Carrot Walnut Cake</span></h3>
+                        <p>
+                            <span data-en="Spiced cake with carrots, nuts, and cream cheese icing." data-jp="人参とナッツのスパイスケーキ。チーズアイシング添え。">Spiced cake with carrots, nuts, and cream cheese icing.</span>
+                            <span class="font-semibold">720円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/tiramisu.jpg" alt="Tiramisu" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="5. Tiramisu" data-jp="5. ティラミス">5. Tiramisu</span></h3>
+                        <p>
+                            <span data-en="Coffee-soaked ladyfingers with mascarpone cream." data-jp="コーヒー香るビスケットとマスカルポーネクリーム。">Coffee-soaked ladyfingers with mascarpone cream.</span>
+                            <span class="font-semibold">750円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/blackforest.jpg" alt="Black Forest Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="6. Black Forest Cake" data-jp="6. ブラックフォレストケーキ">6. Black Forest Cake</span></h3>
+                        <p>
+                            <span data-en="Chocolate sponge, cherry filling, and whipped cream." data-jp="チョコスポンジ、チェリー、ホイップのケーキ。">Chocolate sponge, cherry filling, and whipped cream.</span>
+                            <span class="font-semibold">850円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/lemonpoppy.jpg" alt="Lemon Poppy Seed Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="7. Lemon Poppy Seed Cake" data-jp="7. レモンポピーシードケーキ">7. Lemon Poppy Seed Cake</span></h3>
+                        <p>
+                            <span data-en="Light and zesty cake with a bright lemon glaze." data-jp="爽やかなレモンの香りとポピーシードの食感。">Light and zesty cake with a bright lemon glaze.</span>
+                            <span class="font-semibold">680円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/german.jpg" alt="German Chocolate Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="8. German Chocolate Cake" data-jp="8. ジャーマンチョコレートケーキ">8. German Chocolate Cake</span></h3>
+                        <p>
+                            <span data-en="Layers of chocolate cake with coconut-pecan frosting." data-jp="ココナッツとピーカンのフロスティングを挟んだチョコケーキ。">Layers of chocolate cake with coconut-pecan frosting.</span>
+                            <span class="font-semibold">780円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/opera.jpg" alt="Opera Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="9. Opera Cake" data-jp="9. オペラケーキ">9. Opera Cake</span></h3>
+                        <p>
+                            <span data-en="French cake with coffee, chocolate glaze, and almond sponge." data-jp="コーヒーとチョコが層になったフランス発祥のケーキ。">French cake with coffee, chocolate glaze, and almond sponge.</span>
+                            <span class="font-semibold">900円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/applecrumble.jpg" alt="Apple Crumble Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="10. Apple Crumble Cake" data-jp="10. アップルクランブルケーキ">10. Apple Crumble Cake</span></h3>
+                        <p>
+                            <span data-en="Moist apple cake with a buttery, cinnamon streusel top." data-jp="しっとりリンゴケーキにサクサクのクランブル。">Moist apple cake with a buttery, cinnamon streusel top.</span>
+                            <span class="font-semibold">650円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/biscoff.jpg" alt="Molten Biscoff Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="11. Molten Biscoff Cake" data-jp="11. ビスコフ・フォンダンケーキ">11. Molten Biscoff Cake</span></h3>
+                        <p>
+                            <span data-en="Rich butter cake with a melting Biscoff cookie center." data-jp="ビスコフクッキーのクリームがとろけるバターケーキ。">Rich butter cake with a melting Biscoff cookie center.</span>
+                            <span class="font-semibold">820円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pistachio.jpg" alt="Pistachio Rose Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="12. Pistachio Rose Cake" data-jp="12. ピスタチオローズケーキ">12. Pistachio Rose Cake</span></h3>
+                        <p>
+                            <span data-en="Subtle rose flavor with ground pistachio and a light frosting." data-jp="ピスタチオとほのかなバラの香りの上品なケーキ。">Subtle rose flavor with ground pistachio and a light frosting.</span>
+                            <span class="font-semibold">850円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pavlova.jpg" alt="Pavlova" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="13. Pavlova" data-jp="13. パブロバ">13. Pavlova</span></h3>
+                        <p>
+                            <span data-en="Crisp meringue base topped with fresh cream and berries." data-jp="サクサクのメレンゲにクリームとベリーをトッピング。">Crisp meringue base topped with fresh cream and berries.</span>
+                            <span class="font-semibold">700円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/tresleches.jpg" alt="Tres Leches Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="14. Tres Leches Cake" data-jp="14. トレスレチェケーキ">14. Tres Leches Cake</span></h3>
+                        <p>
+                            <span data-en="Sponge cake soaked in three kinds of milk." data-jp="3種類のミルクに浸したしっとり甘いスポンジケーキ。">Sponge cake soaked in three kinds of milk.</span>
+                            <span class="font-semibold">680円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/victoria.jpg" alt="Victoria Sponge" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="15. Victoria Sponge" data-jp="15. ビクトリアスポンジ">15. Victoria Sponge</span></h3>
+                        <p>
+                            <span data-en="Classic British cake with jam and buttercream filling." data-jp="ジャムとバタークリームをサンドした英国の定番。">Classic British cake with jam and buttercream filling.</span>
+                            <span class="font-semibold">700円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/keylime.jpg" alt="Key Lime Pie" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="16. Key Lime Pie" data-jp="16. キーライムパイ">16. Key Lime Pie</span></h3>
+                        <p>
+                            <span data-en="Sweet and tart lime filling in a buttery crust." data-jp="ライムの酸味と甘みが絶妙なパイ。">Sweet and tart lime filling in a buttery crust.</span>
+                            <span class="font-semibold">650円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dobos.jpg" alt="Dobos Torte" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="17. Dobos Torte" data-jp="17. ドボシュトルテ">17. Dobos Torte</span></h3>
+                        <p>
+                            <span data-en="Hungarian sponge cake layered with chocolate buttercream and caramel." data-jp="チョコクリームとキャラメルが層になったハンガリーのケーキ。">Hungarian sponge cake layered with chocolate buttercream and caramel.</span>
+                            <span class="font-semibold">950円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/hummingbird.jpg" alt="Hummingbird Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="18. Hummingbird Cake" data-jp="18. ハミングバードケーキ">18. Hummingbird Cake</span></h3>
+                        <p>
+                            <span data-en="Banana, pineapple, and pecan spice cake with cream cheese frosting." data-jp="バナナ、パイン、ナッツが入ったスパイスケーキ。">Banana, pineapple, and pecan spice cake with cream cheese frosting.</span>
+                            <span class="font-semibold">780円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/eclair.jpg" alt="Eclair" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="19. Eclair" data-jp="19. エクレア">19. Eclair</span></h3>
+                        <p>
+                            <span data-en="Choux pastry filled with cream and topped with chocolate icing." data-jp="クリームたっぷりのシュー生地にチョコをトッピング。">Choux pastry filled with cream and topped with chocolate icing.</span>
+                            <span class="font-semibold">500円</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/coconut.jpg" alt="Coconut Dream Cake" class="item-img">
+                    <div class="item-content">
+                        <h3><span data-en="20. Coconut Dream Cake" data-jp="20. ココナッツドリームケーキ">20. Coconut Dream Cake</span></h3>
+                        <p>
+                            <span data-en="Super moist cake filled and frosted with sweet coconut flakes." data-jp="ココナッツフレークを贅沢に使ったしっとりケーキ。">Super moist cake filled and frosted with sweet coconut flakes.</span>
+                            <span class="font-semibold">750円</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <h2 data-en="Our Services" data-jp="サービス内容">Our Services</h2>
+        
+        <div class="services-grid">
+                    
+            <a href="library.html" class="service-card">
+                    <span class="icon">📚</span>
+                    <h3 data-en="Library" data-jp="ライブラリ">Library</h3>
+                    <p data-en="Read while you sip." data-jp="コーヒーと共に読書を。">Read while you sip.</p>
+            </a>
+
+            <a href="brews.html" class="service-card">
+                <span class="icon">☕</span>
+                <h3 data-en="Specialty Brews" data-jp="こだわりの一杯">Specialty Brews</h3>
+                <p data-en="Hand-dripped perfection." data-jp="至福のハンドドリップ体験。">Hand-dripped perfection.</p>
+            </a>
+
+           <a href="" class="service-card">
+                <span class="icon">🍰</span>
+                <h3 data-en="House Cakes" data-jp="自家製ケーキ">House Cakes</h3>
+                <p data-en="Freshly baked daily." data-jp="毎日お店で焼いています。">Freshly baked daily.</p>
+           </a>
+
+            <a href="beans.html" class="service-card">
+                <span class="icon">🌱</span>
+                <h3 data-en="Fresh Beans" data-jp="新鮮なコーヒー豆">Fresh Beans</h3>
+                <p data-en="Directly sourced from sustainable farms." data-jp="サステナブルな農園から直送。">Directly sourced from sustainable farms.</p>
+            </a>
+
+            <a href="takeout.html" class="service-card">
+                <span class="icon">🥡</span>
+                <h3 data-en="Takeout & Delivery" data-jp="お持ち帰り＆配達">Takeout & Delivery</h3>
+                <p data-en="Enjoy our coffee anywhere." data-jp="どこでも当店の味を。">Enjoy our coffee anywhere.</p>
+            </a>
+
+            <a href="workshops.html" class="service-card">
+                <span class="icon">🎓</span>
+                <h3 data-en="Barista Workshops" data-jp="バリスタ教室">Barista Workshops</h3>
+                <p data-en="Learn the art of brewing from pros." data-jp="プロから淹れ方を学ぶ。">Learn the art of brewing from pros.</p>
+            </a>
+            
+        </div>
+    </section>
+<section id="support">
+        <div class="support-container">
+            <h2 data-en="Enter the Application" data-jp="アプリへ移動">Enter the Application</h2>
+            <p class="section-desc" data-en="Experience the full Heaven Mind ecosystem directly from your device." data-jp="HEAVEN MINDの全ての機能を、あなたのデバイスから体験してください。">
+                Experience the full Heaven Mind ecosystem directly from your device.
+            </p>
+
+            <div class="app-features">
+                <div class="feature-card">
+                    <span class="feature-icon">📚</span>
+                    <h3 data-en="Digital Library" data-jp="デジタル図書">Digital Library</h3>
+                    <p data-en="Check availability & borrow books." data-jp="在庫確認・貸出予約">Check availability & borrow books.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3 data-en="Mobile Order" data-jp="モバイルオーダー">Mobile Order</h3>
+                    <p data-en="Skip the line, order ahead." data-jp="待ち時間なしで注文">Skip the line, order ahead.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💬</span>
+                    <h3 data-en="Feedback" data-jp="レビュー・感想">Feedback</h3>
+                    <p data-en="Share your thoughts with us." data-jp="感想をお聞かせください">Share your thoughts with us.</p>
+                </div>
+            </div>
+
+            <div class="action-area">
+                <p class="login-note" data-en="Ready to explore?" data-jp="準備はいいですか？">Ready to explore?</p>
+                <a href="main.html" class="support-btn main-app-btn" data-en="Launch App" data-jp="アプリを起動">Launch App</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <small></small>@heavenmind</small>
+    </footer>
+
+    <script src="js/cafe.js"></script>
+</body>
+</html>
