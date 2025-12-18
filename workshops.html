@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Workshops | HEAVEN MIND</title>
+    <style>
+        /* --- 1. Basic Reset & Typography --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 { margin-bottom: 0.5rem; font-weight: 700; }
+        p { margin-bottom: 0.5rem; }
+
+        /* --- 2. Bilingual Text Styling --- */
+        .ja-text {
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 1.5rem; 
+            display: block;
+            line-height: 1.5;
+        }
+
+        /* --- 3. Hero Section --- */
+        .page-hero {
+            background-color: #4a3b32; /* Coffee Brown */
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .page-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-hero .ja-text { color: #ccc; margin-bottom: 0; }
+
+        /* --- 4. Content Layout --- */
+        .page-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .content-grid {
+            display: grid;
+            gap: 2rem;
+            align-items: start; /* Aligns content to top */
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .content-text h2 {
+            color: #4a3b32;
+            margin-top: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* --- 5. List Styling for Classes --- */
+        .workshop-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .workshop-list li {
+            background: #fff;
+            border-left: 4px solid #4a3b32;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .workshop-list strong {
+            color: #4a3b32;
+            display: inline-block;
+            width: 140px; /* Aligns the times nicely */
+        }
+
+        /* --- 6. Image & Button --- */
+        .content-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #4a3b32;
+            font-weight: bold;
+            border: 2px solid #4a3b32;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-btn:hover { background-color: #4a3b32; color: #fff; }
+        .back-btn .ja-text { color: inherit; font-size: 0.8em; margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+    <section class="page-hero">
+        <h1>Barista Workshops</h1>
+        <span class="ja-text">バリスタワークショップ</span>
+        
+        <p style="margin-top: 1rem;">Learn the art of brewing from the pros.</p>
+        <span class="ja-text">プロから学ぶ、抽出の美学。</span>
+    </section>
+
+    <section class="page-content">
+        <div class="content-grid">
+            <div class="content-text">
+                <h2>Become a Home Barista</h2>
+                <span class="ja-text" style="margin-bottom:0.5rem;">ホームバリスタになろう</span>
+                
+                <p>Ever wanted to pour the perfect latte art heart? Or dial in your espresso grind? We host weekend workshops for coffee enthusiasts of all levels.</p>
+                <span class="ja-text">完璧なハートのラテアートを描きたい、あるいはエスプレッソの挽き目を極めたいと思ったことはありませんか？あらゆるレベルのコーヒー愛好家に向けた週末ワークショップを開催しています。</span>
+
+                <h3>Upcoming Classes:</h3>
+                <span class="ja-text">開催予定のクラス:</span>
+
+                <ul class="workshop-list">
+                    <li>
+                        <strong>Latte Art Basics:</strong> Saturdays 10:00 AM<br>
+                        <span class="ja-text" style="margin:0; font-size:0.85em;">ラテアート基礎：毎週土曜日 10:00 AM</span>
+                    </li>
+                    <li>
+                        <strong>Hand Drip Mastery:</strong> Sundays 2:00 PM<br>
+                        <span class="ja-text" style="margin:0; font-size:0.85em;">ハンドドリップマスター：毎週日曜日 2:00 PM</span>
+                    </li>
+                    <li>
+                        <strong>Bean Roasting 101:</strong> First Monday/Month<br>
+                        <span class="ja-text" style="margin:0; font-size:0.85em;">焙煎入門 101：毎月第1月曜日</span>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="https://placehold.co/600x500/eee/888?text=Barista+Class+Photo" 
+                 alt="Barista Teaching Class" 
+                 class="content-img" 
+                 style="background:#ddd; min-height:300px;">
+        </div>
+
+        <a href="cafe.html#service" class="back-btn">
+            ← Back to Services <br>
+            <span class="ja-text">サービス一覧に戻る</span>
+        </a>
+    </section>
+
+</body>
+</html>

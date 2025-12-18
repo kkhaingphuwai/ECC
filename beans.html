@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Barista's Codex | Bean Guide</title>
+  <link rel="stylesheet" href="css/beans.css">
+</head>
+<body>
+
+<header>
+    <button class="lang-switch" onclick="toggleLanguage()">日本語 / EN</button>
+    <h1 id="ui-title">The Barista's Codex</h1>
+    <p id="ui-subtitle">Origin, Process, and Profile Guide</p>
+</header>
+
+<div class="controls">
+    <button class="filter-btn active" onclick="filterBeans('all')" id="btn-all">All Beans</button>
+    <button class="filter-btn" onclick="filterBeans('Arabica')" id="btn-arabica">Arabica</button>
+    <button class="filter-btn" onclick="filterBeans('Robusta')" id="btn-robusta">Robusta</button>
+</div>
+
+<div class="container">
+    <div id="bean-grid" class="bean-grid">
+        </div>
+</div>
+
+<div id="modal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title" style="color: var(--primary); margin-bottom: 0.5rem;">Bean Name</h2>
+        <p id="modal-subtitle" style="color: #666;">Origin</p>
+        
+        <div class="flavor-profile" id="modal-flavor">
+            "Tasting notes go here..."
+        </div>
+
+        <table class="tech-table">
+            <tr><td class="tech-label" id="lbl-species">Species</td><td id="modal-species">-</td></tr>
+            <tr><td class="tech-label" id="lbl-varietal">Varietal</td><td id="modal-varietal">-</td></tr>
+            <tr><td class="tech-label" id="lbl-process">Process</td><td id="modal-process">-</td></tr>
+            <tr><td class="tech-label" id="lbl-altitude">Altitude</td><td id="modal-altitude">-</td></tr>
+            <tr><td class="tech-label" id="lbl-roast">Roast Profile</td><td id="modal-roast">-</td></tr>
+            <tr><td class="tech-label" id="lbl-usage">Best For</td><td id="modal-usage">-</td></tr>
+        </table>
+    </div>
+</div>
+ <a href="cafe.html#service" class="back-btn">
+            ← Back to Services <br>
+            <span class="ja-text">サービス一覧に戻る</span>
+        </a>
+ <script src="js/beans.js"></script>
+</body>
+</html>

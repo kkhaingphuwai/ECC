@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialty Brews | Cafe Page</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero Section Styling */
+        .page-hero {
+            background-color: #2c241b; /* Dark coffee color */
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif;
+        }
+
+        .page-hero p {
+            font-size: 1.2rem;
+            color: #dcb696; /* Light cream accent */
+        }
+
+        .jp-text {
+            display: block;
+            font-size: 0.9em;
+            color: #aaa; /* Slightly dimmer for Japanese subtitles */
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+        /* Content Section Styling */
+        .page-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 40px;
+            align-items: center;
+        }
+
+        .content-text h2 {
+            font-size: 2rem;
+            color: #2c241b;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #dcb696;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Bilingual List Styling */
+        ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #dcb696;
+        }
+
+        li strong {
+            color: #2c241b;
+            font-size: 1.1em;
+        }
+
+        /* Image Styling */
+        .content-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        /* Button Styling */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #2c241b;
+            font-weight: bold;
+            border: 1px solid #2c241b;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #2c241b;
+            color: #fff;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr; /* Stack into 1 column on mobile */
+            }
+            
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-hero">
+        <h1>Specialty Brews</h1>
+        <span class="jp-text">こだわりの抽出</span>
+        <p>Hand-dripped perfection in every cup.</p>
+        <span class="jp-text">一杯ずつ、手作業で淹れる至福の時。</span>
+    </section>
+
+    <section class="page-content">
+        <div class="content-grid">
+            
+            <div class="content-text">
+                <h2>The Art of Pour Over <br><span style="font-size:0.6em; color:#666;">ハンドドリップの芸術</span></h2>
+                
+                <p>
+                    We believe that speed kills quality. That's why our "Specialty Brews" are exclusively hand-dripped using the pour-over method (V60 or Chemex) to extract the most delicate floral and fruity notes from our beans.
+                </p>
+                <p class="jp-text" style="color: #666; margin-top: -15px; margin-bottom: 25px;">
+                    私たちは「速さは質を損なう」と信じています。そのため、当店のコーヒーは、豆本来の繊細な香りや果実味を最大限に引き出すため、すべてハンドドリップ（V60またはケメックス）で提供しています。
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>V60:</strong> Clean, crisp, and highlights acidity.
+                        <div class="jp-text">V60：クリアでキレがあり、酸味を引き立てます。</div>
+                    </li>
+                    <li>
+                        <strong>Chemex:</strong> Rich, smooth, and balanced body.
+                        <div class="jp-text">ケメックス：濃厚で滑らか、バランスの取れたボディ。</div>
+                    </li>
+                    <li>
+                        <strong>Siphon:</strong> A theatrical brewing method for intense aroma.
+                        <div class="jp-text">サイフォン：香りを際立たせる、演出効果の高い抽出法。</div>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="images/brewing-method.jpg" alt="Barista Pouring Coffee" class="content-img" style="background:#ddd; min-height:400px;">
+        </div>
+
+        <a href="cafe.html#service" class="back-btn">
+            ← Back to Services <span style="font-size:0.8em; margin-left:5px;">(サービス一覧に戻る)</span>
+        </a>
+    </section>
+
+</body>
+</html>

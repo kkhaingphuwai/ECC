@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeout & Delivery | HEAVEN MIND</title>
+    <style>
+        /* --- 1. Basic Reset & Typography --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* --- 2. Typography for Bilingual Support --- */
+        h1, h2 {
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        p { margin-bottom: 0.5rem; }
+
+        /* Specific style for Japanese text */
+        .ja-text {
+            font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 1.5rem; /* Extra space after the JP block */
+            display: block;
+        }
+
+        /* --- 3. Hero Section --- */
+        .page-hero {
+            background-color: #4a3b32;
+            color: #fff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .page-hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        
+        .page-hero .ja-text {
+            color: #ccc; /* Lighter text for JP in the dark hero section */
+            margin-bottom: 0;
+        }
+
+        /* --- 4. Content Layout --- */
+        .page-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .content-grid {
+            display: grid;
+            gap: 2rem;
+            align-items: center; 
+            margin-bottom: 2rem;
+        }
+
+        /* Responsive: 2 cols on desktop */
+        @media (min-width: 768px) {
+            .content-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .content-text h2 {
+            color: #4a3b32;
+            margin-top: 1rem;
+            border-bottom: 1px solid #ddd; /* Divider line */
+            padding-bottom: 0.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* --- 5. Image Styling --- */
+        .content-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* --- 6. Button Styling --- */
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #4a3b32;
+            font-weight: bold;
+            border: 2px solid #4a3b32;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-btn:hover {
+            background-color: #4a3b32;
+            color: #fff;
+        }
+        
+        .back-btn .ja-text {
+            color: inherit; /* Keep button text color consistent */
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-hero">
+        <h1>Takeout & Delivery</h1>
+        <span class="ja-text">テイクアウト & デリバリー</span>
+        
+        <p style="margin-top: 1rem;">Enjoy HEAVEN MIND anywhere you go.</p>
+        <span class="ja-text">HEAVEN MINDの味を、どこでも。</span>
+    </section>
+
+    <section class="page-content">
+        <div class="content-grid">
+            <div class="content-text">
+                
+                <h2>Coffee on the Go</h2>
+                <p>In a rush? Order ahead via our Mobile App and pick it up at the counter. No lines, no waiting.</p>
+                <span class="ja-text">お急ぎですか？モバイルアプリから事前注文すれば、列に並ばずカウンターで受け取れます。</span>
+
+                <h2>Delivery Partners</h2>
+                <p>We also deliver via UberEats and DoorDash within a 3km radius. We use specially designed spill-proof cups and biodegradable packaging to ensure your coffee arrives hot and the planet stays cool.</p>
+                <span class="ja-text">UberEatsやDoorDashでのデリバリーも承っております（半径3km圏内）。こぼれにくいカップと環境に優しいパッケージで、熱々のコーヒーをお届けします。</span>
+            
+            </div>
+            
+            <img src="https://placehold.co/600x400/eee/888?text=Takeout+Cup+Image" 
+                 alt="Takeout Coffee Cup" 
+                 class="content-img" 
+                 style="background:#ddd; min-height:300px;">
+        </div>
+        
+        <a href="cafe.html#service" class="back-btn">
+            ← Back to Services <br>
+            <span class="ja-text">サービス一覧に戻る</span>
+        </a>
+    </section>
+
+</body>
+</html>
